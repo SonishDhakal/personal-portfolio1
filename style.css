@@ -1,0 +1,800 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+    transition: .3s ease-in;
+}
+
+:root{
+    --open: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --dk: 'Saira Condensed', sans-serif;
+}
+
+/* navigation same for all pages */
+
+nav{
+    padding: 1.2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    display: inline;
+}
+
+nav .navigation a{
+    color: black;
+    font-size: 20px;
+    font-family: var(--dk);
+    text-decoration: none;
+   
+}
+
+
+nav .navigation div{
+    display: inline-block;
+    height: 30px;
+    width: 2px;
+    background: black;
+    margin: 0;
+    transform: translate(0,9px);
+    margin: 0 0.64rem;
+}
+
+
+/* navigation ends */
+.container{
+    padding: 7rem 6rem 0 6rem;
+}
+
+
+.home{
+    background: #F3F3F3;
+}
+
+.home .container{
+    display: flex;
+}
+
+.home .container .box{
+   flex: 1;
+}
+
+
+.home .container .right{
+    margin-top: 3rem;
+}
+
+.home .container .right h1{
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 7rem;
+    margin-bottom: 1rem;
+    
+}
+
+.home .container .left{
+    background: transparent;
+}
+
+
+
+.home .container .right h3{
+    font-size: 2rem;
+    font-weight:600;
+    
+    
+}
+
+.home .container .right{
+    width: 90%;
+    margin-left: 4rem;
+}
+
+.home .container .right p{
+    width: 75%;
+    font-family: var(--open);
+    margin-top: 1rem;
+    line-height: 1.7rem;
+}
+
+.home .container .right .circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+
+}
+
+
+.home .container .right .circle:nth-child(1){
+    background: #EEA302;
+}
+
+.home .container .right .circle:nth-child(2){
+    background: #FF3B25;
+}
+
+.home .container .right .circle:nth-child(3){
+    background: #74C2C3;
+}
+
+.home .container .right .boxes{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: -1.5rem;
+
+}
+
+.home .container .right .boxes .circle{
+    margin-left: 1rem;
+}
+
+.home .container .right .boxes a div{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.home .container .right .boxes a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.home .container .right .boxes .circle:hover{
+
+}
+
+.home .container .right .boxes a h4{
+    letter-spacing: 1.9px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* home page is done */
+
+
+/* about page starts */
+
+
+.about{
+    position: relative;
+
+}
+
+.about .background{
+    width: 100%;
+    height: 88vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    z-index: -1;
+    
+}
+
+.about .background .back1{
+    width: 556px;
+    height: 90vh;
+    background: #E6DACE;
+}
+
+.about .background .back2{
+    width: 62%;
+    height: 90vh;
+    background: #C4C4C4;
+    padding: 7rem 2rem 2rem 8rem;
+}
+
+
+.about .background .back2 h1{
+    font-size: 4rem;
+}
+
+
+.about .background .back2 p{
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.about .background .back2 a{
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: black;
+    margin-top: 2rem;
+    display: inline-block;
+   
+
+
+}
+
+.about .background .back2 a i{
+
+    
+    margin-right: 1rem;
+   
+}
+
+.about .background .back2 a:hover{
+    background: black;
+    color: white;
+    
+}
+
+.about .card .box{
+    background: #F4ECE6;
+    width: 340px;
+    height: 460px;
+    text-align: center;
+    padding: 3rem 0;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 60%);
+    
+}
+
+.about .card .white{
+    background: white;
+    width: 340px;
+    height: 50px;
+    text-align: center;
+    padding: 0.77rem 0;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 60%);
+}
+
+.about .card .box img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.about .card .box h3,strong{
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin-bottom: 1rem;
+}
+
+.about .card .box .line{
+    height: 1px;
+    width: 130px;
+    background:#0050FF;
+    display: inline-block;
+    
+    
+}
+
+.about .card .white a{
+    color: black;
+    text-decoration: none;
+    margin: 0 0.46rem;
+}
+
+.about .card{
+    position: absolute;
+    top: 70px;
+    left: 20%;
+}
+
+.about .card:hover{
+    top: 50px;
+}
+
+
+
+/* contact pages start */
+
+.contact .boxes{
+    display: flex;
+    padding: 10rem 6rem;
+    justify-content: space-between;
+}
+
+
+.contact .boxes .info h1{
+    font-size: 2.6rem;
+    border-bottom: 3px solid black;
+    width: 70%;
+    
+    
+}
+
+.contact .boxes .info p{
+    width: 70%;
+    margin: 0.69rem 0 3rem 0;
+}
+
+
+.contact .boxes .phone{
+    margin-bottom: 3rem;
+}
+
+
+/* contact page form starts */
+
+
+.contact .boxes label{
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.55rem;
+    
+}
+
+
+
+
+.contact .boxes form span{
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.55rem;
+}
+
+.contact .boxes form .name{
+    display: flex;
+}
+
+input{
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+}
+
+textarea{
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+
+}
+
+.contact .boxes form .name input{
+    height: 2.2rem;
+
+}
+
+.contact .boxes form .name #div1 input{
+    margin-right: 3rem;
+    
+    
+
+}
+
+
+.contact .boxes form .email{
+    margin: 1rem 0;
+
+}
+
+.contact .boxes form .email input{
+    width: 100%;
+    height: 2.2rem;
+}
+
+.contact .boxes form textarea{
+    width: 100%;
+    height:8rem;
+}
+
+
+.contact button{
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: black;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+
+   
+   
+
+
+}
+
+.contact button:hover{
+    background: black;
+    color: white;
+}
+
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* making the pages more responsive */
+
+@media(max-width: 700px){
+
+    nav{
+        padding: 1.2rem 2rem;
+    }
+
+
+
+    .home .container{
+        padding: 9rem 3rem 0 3rem;
+    }
+    .home .container .left{
+        margin-top: 3rem;
+    }
+    .home .container .left img{
+        width: 250px;
+        height: 250px;
+        
+
+    }
+    .home .container .right h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .home .container .right h3{
+        font-size: 1rem;
+    }
+    .home .container .right p{
+        line-height: 1.4rem;
+        font-size: 15px;
+        width: 90%;
+    }
+    .home .container .right .circle{
+        width: 80px;
+        height: 80px;
+    }
+
+    .home .container .right .boxes a h4{
+        letter-spacing: 0.66px;
+    }
+    .home .container .right .boxes a div{
+        margin-top: 1.7rem;
+    }
+
+    /* about page mediaaaa */
+    
+    .about .background .back1{
+        width: 300px;
+    }
+    .about .card{
+        left: 12%;
+        top: 40px;
+        
+    }
+    .about .card .box {
+        width: 245px
+        ;
+            height: 400px
+        ;
+    }
+
+    .about .card .white{
+        height: 32px;
+        width: 245px;
+        padding: 0.37rem 0;
+    }
+    .about .background .back2 h1{
+        font-size: 2rem;
+    }
+    .about .background .back2 p{
+        line-height: 1.5rem;
+        margin-top: 1.6rem;
+        font-size: 15px;
+
+    }
+    .about .background .back2{
+        padding: 2rem 1rem 0rem 5rem;
+    }
+
+    /* contact media starts */
+
+    .contact .boxes .info h1{
+        font-size: 1.3rem;
+    }
+
+    .contact .boxes .info p{
+        width: 100%;
+    margin: 0.49rem 0 1rem 0;
+    font-size: 15px;
+    }
+    .contact .boxes{
+        padding: 5rem 2rem;
+
+    }
+
+    .contact .boxes span{
+        font-size: 15px;
+    }
+    .contact .boxes form span{
+        font-size: 15px;
+    }
+
+    .contact .boxes form label{
+        font-size: 15px;
+    }
+
+
+    
+}
+
+/* .i{
+    display: none;
+
+}
+
+.i i{
+    font-size: 1.3rem;
+}
+
+.navigation-mobile{
+    background: linear-gradient(rgb(195 196 207 / 70%),rgb(112 112 112 / 70%));
+    position: absolute;
+    right:0;
+    top:0 ;
+    height: 100vh;
+    width: 200px;
+    text-align: center;
+    display: none;
+}
+
+
+
+@media(max-width: 400px){
+    .navigation{
+        display: none;
+    }
+    .i{
+        display: block;
+    
+    }
+    .navigation-mobile{
+        display: none;
+    }
+
+    nav h1{
+        font-size: 17px;
+    }
+}
+
+
+
+
+.navigation-mobile a{
+    color: black;
+    
+    font-family: var(--dk);
+    text-decoration: none;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    display: block;
+
+}
+
+
+.navigation-mobile button{
+
+    position: absolute;
+    right: 7%;
+    top: 2%;
+    font-size: 1.3rem;
+
+    
+}
+
+
+nav button{
+    outline: none;
+    background: transparent;
+    border: none;
+} */
+
+
+
+
+@media(max-width: 500px){
+    .navigation{
+        display: none;
+    }
+
+
+    nav h1{
+        font-size: 17px;
+    }
+
+    .buttons{
+        display: block;
+    }
+
+    .home .container .left img{
+        width: 200px;
+        height: 200px;
+        
+
+    }
+
+    .home .container{
+        padding: 9rem 1rem 0 1rem;
+    }
+
+    .home .container .right h1{
+        font-size: 2.1rem;
+        line-height: 1rem;
+    }
+    .home .container .right h3{
+        font-size: 15px;
+    }
+
+    .home .container .right p{
+        line-height: 1rem;
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .home .container .right .circle{
+        width: 50px;
+        height: 50px;
+    }
+
+    .home .container .right .boxes a div{
+        margin-top: 1rem;
+    }
+
+    .home .container .right .boxes a h4{
+        font-size: 9px;
+    }
+
+    .contact .boxes .info h1{
+        font-size: 1rem;
+    }
+
+    .contact .boxes .info p{
+        width: 90%;
+    margin: 0.49rem 0 1rem 0;
+    font-size: 12px;
+    }
+
+    .contact .boxes{
+        padding: 5rem 1rem;
+
+    }
+
+
+    .contact .boxes h3{
+        font-size: 15px;
+    }
+
+    .contact .boxes span{
+        font-size: 12px;
+    }
+    .contact .boxes form .name #div1 input{
+        margin-right: 1rem;
+        
+
+    }
+
+    .contact .boxes form .name input{
+        width: 90%;
+        height: 1.7rem;
+
+    }
+
+    .contact .boxes form .email input{
+        width: 90%;
+        height: 1.7rem;
+    }
+
+    .contact .boxes form textarea{
+        width: 90%;
+        height: 6rem;
+        
+
+    }
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+nav button{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+}
+
+nav #un-trigger{
+    position: absolute;
+    z-index: 300;
+    font-size: 1.5rem;
+    right: 30px;
+    top: 10px;
+}
+
+
+nav{
+    position: relative;
+}
+
+.navigation-mobile a{
+    color: black;
+    
+    font-family: var(--dk);
+    text-decoration: none;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    display: block;
+
+}
+
+
+.navigation-mobile{
+    background: linear-gradient(rgb(195 196 207 / 70%),rgb(112 112 112 / 70%));
+    position: absolute;
+    right:0;
+    top:0 ;
+    height: 100vh;
+    width: 200px;
+    text-align: center;
+    display: none;
+    z-index: 200;
+    
+}
+
+
+.buttons{
+    display: none;
+}
+
+
+@media(max-width: 500px){
+    .navigation{
+        display: none;
+    }
+    /* .i{
+        display: block;
+    
+    }
+    .navigation-mobile{
+        display: none;
+    } */
+
+    nav h1{
+        font-size: 17px;
+    }
+
+    .buttons{
+        display: block;
+    }
+}
+
+

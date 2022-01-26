@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhana Khanal Personal portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;800&family=Saira+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- linking Style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/1.png">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body class="home">
+    <!-- Navigation menu -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>Suhana Khanal</h1></a>
+            </div>
+            <div class="navigation">
+                <a href="index.html">Home</a><div></div>
+                <a href="about.html">About</a><div></div>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="buttons" id="buttons1">
+                <button id="triggered" onclick="show()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+            </div>
+            <div class="navigation-mobile" id="buttons2">
+                <button id="un-trigger" onclick="hide()"><i class="fas fa-times"></i></button>
+                <a href="index.html">Home</a><div></div>
+                <a href="about.html">About</a><div></div>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="boxes">
+            <div class="info">
+
+                <h1>Contact Me</h1>
+                <p>Have any more queris about me? You can use the form or leave a mail.</p>
+                <div class="phone">
+                    <h3>Phone</h3>
+                    <span>984-3763772 </span>
+                </div>
+                <div class="email">
+                    <h3>Email</h3>
+                    <span>khanalsuhana123@gmail.com</span>
+                </div>
+            </div>
+            <div class="forms">
+                <form action="
+            no-action.php">
+                    <div class="name">
+                        <div id="div1">
+                            <span>First Name</span>
+                            <input type="text" name="F-Name" id="" placeholder="">
+                        </div>
+                        <div id="div2">
+                            <span>Last Name</span>
+                            <input type="text" name="L-Name" id="" placeholder="">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email*</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="text-area">
+                        <label for="text-area">Your Message*</label>
+                        <textarea name="text-area"></textarea>
+                    </div>
+                    <div class="btn-area">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
